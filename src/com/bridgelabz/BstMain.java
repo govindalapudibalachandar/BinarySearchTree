@@ -23,5 +23,8 @@ public class BstMain {
 			tree.insert(67);
 			 // print inorder traversal of the BST
 	       tree.inorder();
+	       //print search 
+	     //search method
+	     tree.search(63);
 }
 }

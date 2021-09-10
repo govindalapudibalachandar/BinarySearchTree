@@ -63,6 +63,22 @@ public class BinarySearchTree {
             System.out.println(root.key);
             inorderRec(root.right);
         }
+        }
+    
+      //search method
+    	void search(int data) {
+    		while(root != null) {
+    			if(data<root.key) {                           //checking input is lessthan root or not
+    				root=root.left;                              //moving into left node
+    			}else if(data>root.key) {
+    				root=root.right;
+    			}
+    			else if(data==root.key) {                         //checking data is greater than root
+    				System.out.println(data+" is found");         //moving into right children
+    				break;
+    			}else {
+    				System.out.println("no data found");
+    			}
     }
-   
+    	}
 }
