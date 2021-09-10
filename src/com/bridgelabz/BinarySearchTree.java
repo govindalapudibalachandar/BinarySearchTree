@@ -50,5 +50,19 @@ public class BinarySearchTree {
         
         return root;
       }
+ // This method mainly calls InorderRec()
+    void inorder()
+    {
+         inorderRec(root);
+    }
+    // do inorder traversal of BST
+    void inorderRec(Node root)
+    {
+        if (root != null) {
+            inorderRec(root.left);
+            System.out.println(root.key);
+            inorderRec(root.right);
+        }
+    }
    
 }
